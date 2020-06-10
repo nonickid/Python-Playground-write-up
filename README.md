@@ -35,7 +35,7 @@ Login Sign up
 Sorry, but due to some recent security issues, only admins can use the site right now. Don't worry, the developers will fix it soon :) 
 ```
 
-Lets check if there is mot html files and enumerate web.
+Lets check if there is more html files and enumerate web.
 ```
 gobuster dir -u http://ip-address -w /usr/share/dirb/wordlists/common.txt -x html
 
