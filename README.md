@@ -198,9 +198,9 @@ The only information about credentials we have comes from **admin.html** page (u
 The hash revert process is required to find Connor's password. Hash is generating by executing two functions, two times each:
 **string_to_int_array** and **int_array_to_text**.
 
-The hashed password is known: **'dxeedxebdwemdwesdxdtdweqdxefdxefdxdudueqduerdvdtdvdu'**
+The hashed password is known: **'dxeedxebdwemdwesdxdtdweqdxefdxefdxdudueqduerdvdtdvdu'**.
 
-After analyzing mentioned function our final code for getting connor password is:
+After analyzing mentioned functions our final code for getting connor password is:
 
 ```
 import string
