@@ -109,7 +109,7 @@ Lets leave for now part related to hash generating and open new html page.
 Page http://ip-address/super-secret-admin-testing-panel.html provides us with Python web console when we can put our code.
 Unfortunatelly there is some restrictions. For example **import** statement is restricted.
 Lets try to bypass this restriction. 
-We can try to use __import__ statement.
+We can try to use **\_\_import\_\_** statement.
 Knowing this we can prepare our code, bypass restrictions and get reverse shell with following code:
 ```
 o = __import__('os')
