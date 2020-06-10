@@ -200,7 +200,7 @@ The hash revert process is required to find Connor's password. Hash is generatin
 
 The hashed password is known: **'dxeedxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'**. 
 
-After analyzing mentioned functions our final code for getting connor password is:
+After analyzing mentioned functions our final code for getting Connor's password is:
 
 ```
 import string
