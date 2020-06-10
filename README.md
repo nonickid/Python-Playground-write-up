@@ -93,7 +93,7 @@ The source shows some interesting code:
 
           const hash = int_array_to_text(string_to_int_array(int_array_to_text(string_to_int_array(chosenPass))));
 
-          if(hash === 'dxeedxebdwemdwesdxdtdweqdxefdxefdxdudueqduerdvdtdvdu'){
+          if(hash === 'dxeedxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'){
             window.location = 'super-secret-admin-testing-panel.html';
           }else {
             document.getElementById('fail').style.display = '';
@@ -191,14 +191,14 @@ The only information about credentials we have comes from **admin.html** page (u
 
           const hash = int_array_to_text(string_to_int_array(int_array_to_text(string_to_int_array(chosenPass))));
 
-          if(hash === 'dxeedxebdwemdwesdxdtdweqdxefdxefdxdudueqduerdvdtdvdu'){
+          if(hash === 'dxeedxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'){
             window.location = 'super-secret-admin-testing-panel.html';
 ```            
 
 The hash revert process is required to find Connor's password. Hash is generating by executing two functions, two times each:
 **string_to_int_array** and **int_array_to_text**.
 
-The hashed password is known: **'dxeedxebdwemdwesdxdtdweqdxefdxefdxdudueqduerdvdtdvdu'**.
+The hashed password is known: **'dxeedxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'**. 
 
 After analyzing mentioned functions our final code for getting connor password is:
 
@@ -208,7 +208,7 @@ import math
 
 characters = string.digits + string.ascii_lowercase
 
-hashstring = 'dxeedxebdwemdwesdxdtdweqdxefdxefdxdudueqduerdvdtdvdu'
+hashstring = 'dxeedxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 ord_chars = [ ord(i) for i in hashstring ]
 
