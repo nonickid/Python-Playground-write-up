@@ -224,7 +224,7 @@ password = [ j for i in range(1,len(password),2)
 print("Connor's password is: " + ''.join(password))
 ```
 
-Knowing connor's password we can try login using ssh:
+Knowing Connor's password we can try login using ssh:
 
 ```
 ssh connor@10.10.X.X
